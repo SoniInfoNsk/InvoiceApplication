@@ -89,11 +89,11 @@ export const AuthContextProvider = (props) => {
   })
   console.log(invoiceHeadData);
 
-  const [BillingDetails, dispatchBillingDetails] = useReducer(
+  const [InvoiceDetails, dispatchInvoiceDetails] = useReducer(
     reducerfun,
     initialState
   )
-  console.log(BillingDetails);
+  console.log(InvoiceDetails);
 
   const [itemsState, setItemsState] = useState(initialVal)
   const [subTotal, setSubtotal] = useState(1);
@@ -192,8 +192,8 @@ export const AuthContextProvider = (props) => {
       onAddInvnum: onSetInvnumHandler,
       onAddInvdueDate: onSetInvdueDateHandler,
       invHeadData: invoiceHeadData,
-      allBillingDeatils: BillingDetails,
-      dispatchingInvoiceDetails: dispatchBillingDetails,
+      allBillingDeatils:InvoiceDetails,
+      dispatchingBillDetails: dispatchInvoiceDetails,
       allItems: itemsState,
       addItemfun: onAdditemHandler,
       deleteItemfun: onDeleteItemHandler,

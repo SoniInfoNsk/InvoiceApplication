@@ -5,7 +5,7 @@ import FormInvoice from './FormInvoice';
 import FormReview from './FormReview';
 
 const Form = () => {
-    const [modalView, setModalView] = React.useState(false)
+    const [modalView, setModalView] = useState(false)
 
     const onSubmitHandler = (e) => {
         e.preventDefault();

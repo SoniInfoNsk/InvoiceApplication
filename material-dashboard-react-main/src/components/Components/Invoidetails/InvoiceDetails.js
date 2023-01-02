@@ -13,7 +13,7 @@ const InvoiceDetails = () => {
             <label className="billing_from">
                 Invoice to:
                 <Input onChange={(e) => {
-                    cntx.dispatchingInvoiceDetails({
+                    cntx.dispatchingBillDetails({
                         type: "CUST_NAME",
                         value: e.target.value
 
@@ -25,7 +25,7 @@ const InvoiceDetails = () => {
                 />
                 <Input
                     onChange={(e) => {
-                        cntx.dispatchingInvoiceDetails({
+                        cntx.dispatchingBillDetails({
                             type: "CUST_EMAIL",
                             value: e.target.value,
                         });
@@ -36,7 +36,7 @@ const InvoiceDetails = () => {
                 />
                 <Input
                     onChange={(e) => {
-                        cntx.dispatchingInvoiceDetails({
+                       cntx.dispatchingBillDetails({
                             type: "CUST_ADD",
                             value: e.target.value,
                         });
@@ -50,7 +50,7 @@ const InvoiceDetails = () => {
                 Bill From
                 <Input
                     onChange={(e) => {
-                        cntx.dispatchingInvoiceDetails({
+                        cntx.dispatchingBillDetails({
                             type: "MY_NAME",
                             value: e.target.value,
                         });
@@ -61,7 +61,7 @@ const InvoiceDetails = () => {
                 />
                 <Input
                     onChange={(e) => {
-                        cntx.dispatchingInvoiceDetails({
+                        cntx.dispatchingBillDetails({
                             type: "MY_EMAIL",
                             value: e.target.value,
                         });
@@ -72,7 +72,7 @@ const InvoiceDetails = () => {
                 />
                 <Input
                     onChange={(e) => {
-                        cntx.dispatchingInvoiceDetails({
+                        cntx.dispatchingBillDetails({
                             type: "MY_ADD",
                             value: e.target.value,
                         });
