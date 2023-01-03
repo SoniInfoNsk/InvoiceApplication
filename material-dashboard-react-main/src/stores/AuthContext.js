@@ -110,8 +110,8 @@ export const AuthContextProvider = (props) => {
   const [tax, setTax] = useState("0.00");
   console.log(tax);
 
-  //   const [discount, setDiscount] = useState("0.00");
-  //   console.log(discount);
+    const [discount, setDiscount] = useState("0.00");
+    console.log(discount);
 
   const onAdditemHandler = (e) => {
     e.preventDefault();
@@ -205,7 +205,8 @@ export const AuthContextProvider = (props) => {
       onSetCurrency: setCurrency,
       taxData: tax,
       onSetTax: setTax,
-      
+      discountData: discount,
+      onSetDiscount: setDiscount
     }}>
       {props.children}
     </AuthContext.Provider>

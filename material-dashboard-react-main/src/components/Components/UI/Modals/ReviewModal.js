@@ -3,6 +3,8 @@ import Button from "../Button";
 import "./ReviewModal.css";
 import ReviewModalInner from "./ReviewModalInner";
 
+
+
 const Modal = (props) => {
   return (
     <div onClick={props.onClick} className="modal">

@@ -31,7 +31,7 @@ const SubTotal = (props) => {
           <div className="tax tt">
             <span className="th">Tax:</span>
             <span>
-              ({cntx.taxData}%){cntx.changeCurrency} {currTax}
+              ({cntx.taxData}%) {cntx.changeCurrency} {currTax}
             </span>
           </div>
           <div className="break"></div>
